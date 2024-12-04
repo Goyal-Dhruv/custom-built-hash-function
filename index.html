@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hash Function Playground</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hash Function Playground</h1>
+        <p>Select a hash function and input a string to compute the hash value.</p>
+
+        <form id="hash-form">
+            <label for="hash-function">Choose a hash function:</label>
+            <select id="hash-function" name="hash-function">
+                <option value="sum-ascii">Sum of ASCII Values</option>
+                <option value="xor-hash">XOR Hash</option>
+                <option value="bitwise-shift">Bitwise Shift Hash</option>
+            </select>
+
+            <label for="input-string">Enter your input:</label>
+            <input type="text" id="input-string" name="input-string" placeholder="Enter a string" required>
+
+            <button type="button" id="compute-hash">Compute Hash</button>
+        </form>
+
+        <div class="result">
+            <h2>Hash Result:</h2>
+            <p id="hash-result">Your hash will appear here.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
